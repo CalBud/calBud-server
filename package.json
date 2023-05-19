@@ -1,25 +1,19 @@
 {
-  "name": "calbud-server",
+  "name": "cal-bud-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CalBud/calBud-server.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CalBud/calBud-server/issues"
-  },
-  "homepage": "https://github.com/CalBud/calBud-server#readme",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2"
-  }
+    "@shopify/app": "3.45.4",
+    "@shopify/cli": "3.45.4"
+  },
+  "author": "alexm"
 }
